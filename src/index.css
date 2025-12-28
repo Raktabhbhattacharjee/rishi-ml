@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Standard CSS that every editor understands */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  /* This creates the smooth transition for Dark/Light mode */
+  transition: background-color 0.5s ease, color 0.5s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* This ensures Tailwind's dark mode works with our manual toggle */
+.dark body {
+  background-color: #020617; /* Matches slate-950 */
+  color: #f8fafc;            /* Matches slate-100 */
+}
