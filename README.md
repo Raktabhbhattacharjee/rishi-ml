@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# Rishi's ML Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my Machine Learning portfolio! This is a minimalist, responsive portfolio built with **React**, **TypeScript**, and **Tailwind CSS** to showcase my journey and projects in Data Science and Machine Learning.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> _[Add your deployed site link here, e.g. https://raktabhbhattacharjee.github.io/rishi-ml/ or your Vercel link]_
 
-## React Compiler
+## 🧑‍💻 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio highlights my learning and projects in:
 
-## Expanding the ESLint configuration
+- Data cleaning and analysis with **SQL** and **Pandas**
+- Predictive modeling with **Scikit-Learn**
+- Data visualization with **Matplotlib** and **Seaborn**
+- Frontend development with **React** and **TypeScript**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Projects
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Project                 | Description                                                             | Tech Stack                  |
+| ----------------------- | ----------------------------------------------------------------------- | --------------------------- |
+| Iris Species Classifier | Random Forest model to classify flower species with 98% accuracy        | Python, Scikit-Learn, NumPy |
+| Sales Data Wrangling    | Cleaned and analyzed 10k+ sales records using Pandas and SQL            | Pandas, SQL, Matplotlib     |
+| Portfolio Website       | This website! Minimalist, responsive, and built with React & TypeScript | React, TypeScript, Tailwind |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repo:**
+   ```sh
+   git clone https://github.com/Raktabhbhattacharjee/rishi-ml.git
+   cd rishi-ml
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Run locally:**
+   ```sh
+   npm run dev
+   ```
+4. **Build for production:**
+   ```sh
+   npm run build
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌐 Deployment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+You can deploy this site using **GitHub Pages**, **Vercel**, or any static hosting provider.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Deploy to GitHub Pages
+
+1. Install the Vite GitHub Pages plugin:
+   ```sh
+   npm install --save-dev vite-plugin-gh-pages
+   ```
+2. Update your `vite.config.ts` and `package.json` for correct base path and deploy script.
+3. Run:
+   ```sh
+   npm run deploy
+   ```
+
+### Deploy to Vercel
+
+1. Go to [vercel.com](https://vercel.com/) and import your GitHub repo.
+2. Vercel will auto-detect your Vite + React app and deploy it.
+
+## 🤝 Connect
+
+- [GitHub](#)
+- [LinkedIn](#)
+- [Email](mailto:your@email.com)
+
+---
+
+_© {year} Rishi — ML Journey_
