@@ -12,11 +12,8 @@ import {
   BrainCircuit,
   ExternalLink,
   Table2
-  // ChevronRight was removed from here
-} from 'lucide-react';``
+} from 'lucide-react';
 
-// --- YOUR PROJECT DATA ---
-// Update this list as you build new things!
 const projects = [
   {
     title: "Iris Species Classifier",
@@ -79,10 +76,14 @@ export default function App() {
             Data. Logic. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-emerald-400">Intelligence.</span>
           </h2>
+          
+          {/* UPDATED ABOUT ME SECTION */}
           <p className="text-xl text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed">
-            I'm a developer building a strong foundation in Data Science. I specialize in 
-            cleaning data with <b>SQL/Pandas</b> and building predictive models with <b>Scikit-Learn</b>.
+            I started my journey in <b>JavaScript</b> building logic-driven interfaces. 
+            Now, I'm bridging that gap with <b>Machine Learning</b>—turning messy data 
+            into actionable intelligence using <b>Python, Pandas, and Scikit-Learn</b>.
           </p>
+
           <div className="flex flex-wrap gap-4">
             <SocialLink href="#" icon={<Github size={20} />} label="GitHub" />
             <SocialLink href="#" icon={<Linkedin size={20} />} label="LinkedIn" />
