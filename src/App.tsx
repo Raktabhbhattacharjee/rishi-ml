@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import {
   Github,
   Linkedin,
@@ -44,12 +45,14 @@ export default function App() {
   }, [darkMode]);
 
   return (
-    <div
-      className={`min-h-screen transition-colors duration-500 ${
-        darkMode ? "bg-slate-950 text-slate-100" : "bg-slate-50 text-slate-900"
-      }`}
-    >
-      {/* Navigation */}
+    <>
+      <Analytics />
+      <div
+        className={`min-h-screen transition-colors duration-500 ${
+          darkMode ? "bg-slate-950 text-slate-100" : "bg-slate-50 text-slate-900"
+        }`}
+      >
+        {/* Navigation */}
       <nav className="fixed w-full p-6 backdrop-blur-md bg-opacity-70 z-50 border-b border-slate-200 dark:border-slate-800">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <h1 className="text-xl font-bold tracking-tighter">
@@ -257,6 +260,6 @@ function ProjectCard({
           </span>
         ))}
       </div>
-    </div>
+    </>
   );
 }
